@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Simple Music App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <div class="music-player">
+      <div class="cover-wrapper">
+        <div class="cover">
+          <div class="loader"></div>
+        </div>
+      </div>
+      <div class="song-list">
+        <ul>
+          <li>Song 1</li>
+          <li>Song 2</li>
+          <li>Song 3</li>
+        </ul>
+      </div>
+      <div class="controls">
+        <button class="previous">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path d="M12 12V7l-7 5 7 5zm7-5-7 5 7 5z"></path>
+          </svg>
+        </button>
+        <button class="play-pause">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path d="M7 6v12l10-6z"></path>
+          </svg>
+        </button>
+        <button class="next">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path d="m19 12-7-5v10zM5 7v10l7-5z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

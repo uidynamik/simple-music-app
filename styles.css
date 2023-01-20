@@ -1,0 +1,137 @@
+.music-player {
+  width: 300px;
+  margin: 50px auto;
+  text-align: center;
+  border: 3px solid #eee;
+  border-radius: 10px;
+  padding: 0.5rem 0px;
+  background-color: #fff;
+}
+
+.cover-wrapper {
+  background-color: #808488;
+  border-radius: 5px;
+  width: 95%;
+  height: 200px;
+  margin: auto;
+}
+
+.cover {
+  height: 100%;
+  overflow: hidden;
+  background-image: url('https://i.ibb.co/KDNhsbv/marcela-laskoski-Yrt-Flr-Lo2-DQ-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-color: #000000;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.6;
+}
+
+.cover img {
+  width: 100%;
+}
+
+.song-list {
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-size: 18px;
+  overflow: auto;
+  max-height: 200px;
+}
+
+.song-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.song-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.song-list li:hover {
+  background-color: #e5e5e5;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.play-pause,
+.next,
+.previous {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.play-pause {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+}
+
+.play-pause:hover {
+  background-color: #3e8e41;
+}
+
+.next {
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+}
+
+.next:hover {
+  background-color: #0d47a1;
+}
+
+.previous {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+}
+
+.previous:hover {
+  background-color: #da190b;
+}
+
+button svg {
+  fill: #fff;
+}
+
+.loader {
+  width: 8px;
+  height: 8px;
+  position: relative;
+  border-radius: 50%;
+  background: #b968ff;
+  animation: wave 3s ease-in infinite;
+}
+
+@keyframes wave {
+  0% {
+    box-shadow: 0 0 0 0px rgba(94, 53, 177, 1),
+      0 0 0 20px rgba(94, 53, 177, 0.2), 0 0 0 40px rgba(94, 53, 177, 0.6),
+      0 0 0 60px rgba(94, 53, 177, 0.4), 0 0 0 80px rgba(94, 53, 177, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 80px rgba(94, 53, 177, 0),
+      0 0 0 60px rgba(94, 53, 177, 0.2), 0 0 0 40px rgba(94, 53, 177, 0.4),
+      0 0 0 20px rgba(94, 53, 177, 0.6), 0 0 0 0px rgba(94, 53, 177, 1);
+  }
+}
